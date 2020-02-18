@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Resume</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+img{
+    height: 150px;
+    width: 150px;
+    border: 3px solid black;
+}
+.top{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: white;
+    background-image: linear-gradient(black,rgb(105, 101, 101));
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color:black;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+  color: white;
+  background-image: linear-gradient(black,rgb(105, 101, 101));
+
+}
+h1{
+    color:yellow;
+}
+h3,h2,h1{
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.object{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    padding: 25px;
+}
+
+#Objective {background-color:white;}
+#Qualification {background-color: white;}
+#Skills{background-color: white;}
+#About {background-color: white;}
+
+</style>
+<script>
+    function openPage(pageName,elmnt,color) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+      }
+      document.getElementById(pageName).style.display = "block";
+      elmnt.style.backgroundColor = color;
+    }
+    
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
+</head>
+<body onload="openPage('Objective', this, 'skyblue')" >
+<div class="col-md-12 text-center top">
+    <div class="col-md-2 row">
+        <img src="me.jpg">
+    </div>
+    <div class="col-md-5">
+        <h2>UMA SHANKAR .R</h2>
+    </div>
+    <div class="col-md-5">
+        <table>
+            <tr>
+                <th>Email-Id :</th>
+                <td>umashankar.r1999@gmail.com</td>
+            </tr>
+            <tr>
+                <th>Contact No:</th>
+                <td>+91 93602 57461</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<br>
+<div class="col-md-12">
+<button class="tablink" onclick="openPage('Objective', this, 'skyblue')" id="defaultOpen">Objective</button>
+<button class="tablink" onclick="openPage('Qualification', this, 'skyblue')">Qualification</button>
+<button class="tablink" onclick="openPage('Skills', this, 'skyblue')">Skills & Activities</button>
+<button class="tablink" onclick="openPage('About',this,'skyblue')">About Me</button>
+</div>
+<div id="Objective" class="tabcontent">
+  <div class="object">
+  <h3>
+    To become a successful professional in any field , utilizing my skills and enable 
+    further personal and professional development and work towards the prosperity of the organization.
+  </h3>
+  </div>
+</div>
+
+<div id="Qualification" class="tabcontent">
+    <h2>B.SC computer Science doing in Sri Kaliswari College , Sivakasi upto fifth Semester  7.33(CGPA)</h2>
+    <h2>HSC from A.V.M. Marimuthu Nadar Higher Secondary school in Rajapalayam with 75%, April 2017.</h2>
+    <h2>SSLC from A.V.M. Marimuthu Nadar Higher Secondary school in Rajapalayam with 90%,April 2015. </h2> 
+    
+</div>
+
+<div id="Skills" class="tabcontent">
+    <h2>Programming Languages	: C, C++,Java,Python,C#</h2>
+    <h2>Mobile Application	: Android</h2>
+    <h2>Presentation Skill	: Microsoft Presentation 2007 & 2010</h2>
+    <h2>Database	: MS – Access , SQL</h2>
+    <h2>Web Application	: HTML5, DHTML,CSS,Java Script ,PHP ,VB</h2>
+    <h2>FrameWork	: .NET</h2>
+</div>
+
+<div id="About" class="tabcontent">
+    <h2>Name	: Mr R.Uma Shankar</h2>
+    <h2>Father’s Name	:Mr  C.Ramesh</h2>
+    <h2>Mother’s Name	: Mrs R.Mani Mala</h2>
+    <h2>Permanent Address	: 2/383 'A' , South Street, Poolavourani, Sivakasi</h2>
+    <h2>Date of Birth	: 05.10.1999</h2>
+    <h2>Nationality	: Indian</h2>
+    <h2>Sex	: Male</h2>
+    <h2>Marital Status: Unmarried</h2>
+    <h2>Hobbies	: Search Latest Technology</h2>
+    <h2>Languages Known	: English, Tamil (Read, Speak & Write)</h2>
+    
+</div>  
+</body>
+</html> 
